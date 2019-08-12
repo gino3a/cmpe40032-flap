@@ -1,5 +1,5 @@
 --[[
-    Flappy Bird Remake
+    Match-3 Remake
 
     -- BaseState Class --
 

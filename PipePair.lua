@@ -11,6 +11,9 @@ PipePair = Class{}
 local GAP_HEIGHT = 90
 
 function PipePair:init(y)
+    -- flag to hold whether this pair has been scored (jumped through)
+    self.scored = false
+
     -- initialize pipes past the end of the screen
     self.x = VIRTUAL_WIDTH + 32
 
@@ -40,7 +43,7 @@ function PipePair:update(dt)
 end
 
 function PipePair:render()
-    for k, pipe in pairs(self.pipes) do
+    for l, pipe in pairs(self.pipes) do
         pipe:render()
     end
 end
