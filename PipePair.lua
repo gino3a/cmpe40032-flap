@@ -1,7 +1,6 @@
 --[[
     PipePair Class
 
-
     Used to represent a pair of pipes that stick together as they scroll, providing an opening
     for the player to jump through in order to score a point.
 ]]
@@ -26,9 +25,6 @@ function PipePair:init(y)
 
     -- whether this pipe pair is ready to be removed from the scene
     self.remove = false
-
-    -- whether or not this pair of pipes has been scored
-    self.scored = false
 end
 
 function PipePair:update(dt)
